@@ -12,9 +12,18 @@ app.use(express.json());
 
 // Routes
 const artsRouter = require('../backend/routes/arts')
+const familyRouter = require('../backend/routes/family')
+const foodRouter = require('../backend/routes/food')
+const historyRouter = require('../backend/routes/history')
+const outdoorsRouter = require('../backend/routes/outdoors')
+const sportsRouter = require('../backend/routes/sports')
 
 app.use('/arts', artsRouter)
-
+app.use('/family', familyRouter)
+app.use('/food', foodRouter)
+app.use('/history', historyRouter)
+app.use('/outdoors', outdoorsRouter)
+app.use('/sports'. sportsRouter)
 // Start the server
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
