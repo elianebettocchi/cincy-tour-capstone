@@ -15,17 +15,16 @@ const FamilyFun = () => {
           alt="First slide"
         />
         <Carousel.Caption>
-        <Button variant="secondary">FEATURED ATTRACTIONS</Button>{' '}
-          
+        <a href="https://www.artworkscincinnati.org/mural/cincinnati-toy-heritage/" target="_blank" rel="noopener noreferrer"><Button variant="info"><i class="bi bi-info-lg"></i></Button></a>{' '}
         </Carousel.Caption>
       </Carousel.Item>
+
       <Carousel.Item>
         <img
           className="d-block w-100"
           src="https://drive.google.com/uc?export=view&id=16CRjLZNuyOKfwJvJe1krRkOA1T3CzbSY"
           alt="Second slide"
         />
-
         <Carousel.Caption>
         <a href="https://www.visitkingsisland.com/" target="_blank" rel="noopener noreferrer"> 
         <Button variant="info">VISIT WEBSITE</Button>{' '}</a>
