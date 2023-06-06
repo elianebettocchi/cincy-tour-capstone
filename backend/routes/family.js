@@ -14,6 +14,7 @@ router.route('/add').post((req,res) => {
     const address = req.body.address;
     const website = req.body.website;
     const category = req.body.category
+    const familyFriendly = req.body.familyFriendly
 
     const newFamily = new Family ({
         name,
@@ -21,7 +22,8 @@ router.route('/add').post((req,res) => {
         imgUrl,
         address,
         website,
-        category
+        category,
+        familyFriendly
     });
 
     newFamily.save()
@@ -44,6 +46,7 @@ router.route('/update/:id').post((req,res) => {
       family.address = req.body.address;
       family.website = req.body.website
       family.category = req.body.category
+      family.familyFriendly = req.body.familyFriendly
       
 
       exercise.save()

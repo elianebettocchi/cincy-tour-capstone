@@ -14,6 +14,7 @@ router.route('/add').post((req,res) => {
     const address = req.body.address;
     const website = req.body.website
     const category = req.body.category
+    const familyFriendly = req.body.familyFriendly
 
     const newFood = new Food ({
         name,
@@ -21,7 +22,8 @@ router.route('/add').post((req,res) => {
         imgUrl,
         address,
         website,
-        category
+        category,
+        familyFriendly
     });
 
     newFood.save()
@@ -44,6 +46,7 @@ router.route('/update/:id').post((req,res) => {
       food.address = req.body.address;
       food.website = req.body.website;
       food.category = req.body.category
+      food.familyFriendly = req.body.familyFriendly
 
       exercise.save()
         .then(() => res.json('Attraction updated!'))
